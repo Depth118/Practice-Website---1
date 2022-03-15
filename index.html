@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Copium</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Amog<span>US</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="./images/menu.svg"
+          alt="Open Navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="./images/exit.svg"
+            alt="Close Navigation"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="./index.html">Home of SUS</a></li>
+            <li><a href="#">SUSSY Features</a></li>
+            <li><a href="#">Sussy Pricing (It's free)</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li class="current"><a href="#">Contact da SUS</a></li>
+            <li class="go-premium-cta"><a href="#">Premium SUS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Sussy &amp; Bussy</p>
+          <h1>The Most Sussiest Thing You Will Ever See</h1>
+
+          <div class="hero-cta">
+            <a href="./sus.html" class="primary-cta">Don't Ever Click</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="watch-video-cta">
+              <img src="./images/watch.svg" alt="Watch a Video" /> Watch a Video
+            </a>
+          </div>
+        </div>
+        <img
+          class="hero-img"
+          src="./images/Red.png"     
+          alt="illustration"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Unlimited Sussy</li>
+          <li>Send sus through SMS</li>
+          <li>Confetti explosions when you are sussy</li>
+          <li>Sussical Media Announcements</li>
+          <li>Real Time Sus</li>
+          <li>Other Sussy features</li>
+        </ul>
+        <img src="./images/green.png" alt="man holding phone" />
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="./images/red.png" alt="Person" />
+            <blockquote>"Man that was sussy"</blockquote>
+            <cite>-  Red Gandhi</cite>
+          </li>
+          <li>
+            <img src="./images/blue.png" alt="Person" />
+            <blockquote>"This is the worst thing ever"</blockquote>
+            <cite>- Blue Abraham Lincoln</cite>
+          </li>
+          <li>
+            <img src="./images/yellow.png" alt="Person" />
+            <blockquote>"My dad left me"</blockquote>
+            <cite>- Yellow Sun Tzu</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Type out how you never touched grass</h2>
+
+          <form action="">
+            <label for="name">Amogus</label>
+            <input type="text" name="name" id="name" />
+            <label for="message">Enter Your SUS Here</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send SUS"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1423.8929117150985!2d26.080109000000004!3d44.458062800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b202033db033df%3A0x1cb72daf776fb289!2sTudor%20Vianu%20National%20Amongus%20High%20School!5e0!3m2!1sen!2sin!4v1647279015391!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+
+      const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click',() => {
+        nav.classList.add('menu-btn');
+      })
+      mobileBtnExit.addEventListener('click',() => {
+        nav.classList.remove('menu-btn');
+      })
+    </script>
+  </body>
+</html>
